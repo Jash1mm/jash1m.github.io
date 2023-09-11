@@ -1,5 +1,5 @@
 body {
-    background-color: blue;
+    background-color: lightcoral;
 }
 
 h1 {
@@ -10,8 +10,17 @@ h1 {
 p {
     font-family: tahoma;
     font-size: 20px;
+
 }
 
 a {
-    color: white;
+    color: black;
 }
+
+#profile-image {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
