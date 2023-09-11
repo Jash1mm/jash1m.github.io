@@ -1,20 +1,20 @@
 body {
-    background-color: lightcoral;
+    background-color: lightsteelblue;
 }
 
 h1 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
 p {
-    font-family: tahoma;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 
 }
 
 a {
-    color: black;
+    color: blueviolet;
 }
 
 #profile-image {
@@ -23,4 +23,5 @@ a {
     display: block;
     margin: 0 auto;
 }
+
 
