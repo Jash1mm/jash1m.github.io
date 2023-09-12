@@ -14,7 +14,8 @@ p {
 }
 
 a {
-    color: blueviolet;
+    text-decoration: none;
+    color: brown;
 }
 
 #profile-image {
@@ -24,4 +25,10 @@ a {
     margin: 0 auto;
 }
 
+figcaption {
+    text-align:center;
+}
 
+header, footer, h2{
+    text-align: center;
+}
