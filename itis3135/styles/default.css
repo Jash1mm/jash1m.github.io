@@ -6,6 +6,9 @@ h1 {
     color: ;
     text-align: center;
 }
+h3{
+    text-align: center;;
+}
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -54,4 +57,8 @@ td {
 }
 td:nth-child(3), th:nth-child(3) {
     text-align: center;
+  }
+
+a:hover {
+    background-color: whitesmoke;
   }
