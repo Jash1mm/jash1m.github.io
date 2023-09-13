@@ -1,13 +1,14 @@
 body {
-    background-color: lightsteelblue;
+    background-color: skyblue;
 }
 
 h1 {
-    color: ;
+    color: white;
     text-align: center;
 }
-h3{
-    text-align: center;;
+h2, h3{
+    color: orangered;
+    text-align: center;
 }
 
 p {
@@ -18,7 +19,7 @@ p {
 
 a {
     text-decoration: none;
-    color: brown;
+    color: orangered;
 }
 
 #profile-image {
@@ -60,5 +61,6 @@ td:nth-child(3), th:nth-child(3) {
   }
 
 a:hover {
-    background-color: whitesmoke;
+    background-color:burlywood;
   }
+
