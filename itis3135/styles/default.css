@@ -15,6 +15,7 @@ h2, h3{
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    text-align: left;
 
 }
 
@@ -82,4 +83,5 @@ button {
     padding: 5px; 
     margin: 5px 0; 
   }
+  
   
