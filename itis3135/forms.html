@@ -26,22 +26,42 @@
         <h2>Jashim Howlader || ITIS 3135 Forms</h2>
 
 <form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required placeholder="Enter your name">
-  
+    <div>
+    <label for="name">First Name:</label> <div>
+    <input type="text" id="name" name="name" required placeholder="Enter your first name">
+    </div>
+    </div>
+
+    <div>
+        <label for="name">Last Name:</label> 
+        <div>
+        <input type="text" id="name" name="name" required placeholder="Enter your last name">
+        </div>
+    </div>
+
+    <div>
     <label for="phone">Phone number:</label>
+    <div>
     <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
-    <br>
+    </div>
+    </div>
+
+    <div>
     <label for="email">Email address:</label>
+    <div>
     <input type="email" id="email" name="email" required placeholder="Enter your email">
-    <br>
+    </div>
+    </div>
+
     <br>
     <div>
-    <label for="checkboxes">Checkbox group:</label>
+    <label for="checkboxes">What Services Did you Get from Jashim Limited?</label>
+    <div>
     <input type="checkbox" id="checkbox1" name="checkboxes" value="option1">
     <label for="checkbox1">Option 1</label>
     <input type="checkbox" id="checkbox2" name="checkboxes" value="option2">
     <label for="checkbox2">Option 2</label>
+    </div>
     </div>
     <br>
     <div class="form-group">
