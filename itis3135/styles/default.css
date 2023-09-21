@@ -57,10 +57,12 @@ td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
-td:nth-child(3), th:nth-child(3) {
+td:nth-child(3), th:nth-child(3), td:nth-child(4) {
     text-align: center;
   }
-
+tfoot {
+    text-align: center;
+}
 a:hover {
     background-color:burlywood;
   }
