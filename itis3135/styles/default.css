@@ -7,7 +7,7 @@ h1 {
     text-align: center;
 }
 h2, h3{
-    color: white;
+    color: whitesmoke;
     text-align: center;
    
 }
@@ -19,7 +19,7 @@ p {
 
 a {
     text-decoration: none;
-    color: red;
+    color: crimson;
 }
 
 #profile-image {
