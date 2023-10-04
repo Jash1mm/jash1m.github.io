@@ -1,13 +1,13 @@
 body {
-    background-color: skyblue;
+    background-color: #757d8c;
 }
 
 h1 {
-    color: white;
+    color:dodgerblue;
     text-align: center;
 }
 h2, h3{
-    color: whitesmoke;
+    color: dodgerblue;
     text-align: center;
    
 }
@@ -18,8 +18,7 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: crimson;
+    color: white;
 }
 
 #profile-image {
@@ -63,7 +62,7 @@ tfoot {
     text-align: center;
 }
 a:hover {
-    background-color:black;
+    background-color:dodgerblue;
   }
 
 .tfoot {
