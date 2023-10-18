@@ -1,15 +1,14 @@
+/* CSS Default Page */
+
+@media (min-width: 576px) {
+
 body {
-    background-color: #757d8c;
+    background-color: lightblue;
 }
 
-h1 {
+h1, h2, h3{
     color:dodgerblue;
     text-align: center;
-}
-h2, h3{
-    color: dodgerblue;
-    text-align: center;
-   
 }
 
 p {
@@ -18,11 +17,11 @@ p {
 }
 
 a {
-    color: white;
+    color: orangered;
 }
 
 #profile-image {
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -87,4 +86,56 @@ button {
 main {
     margin-left: 15%;
     margin-right: 15%;
+}
+
+/* Large-button styling for firstScript */
+.large-button {
+    font-size: 20px; /* Adjust the font size as needed */
+    padding: 5px 5px; /* Adjust the padding to increase the button size */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.large-button {
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.action-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+footer {
+    padding: 20px;
+}
 }

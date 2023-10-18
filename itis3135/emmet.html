@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<style>
+    body{
+        background: lightblue
+    }
+    h1{
+        text-align: center;
+        color: whitesmoke;
+        padding: 10px;
+    }
+    h2, ul {
+        color: black;
+        text-align: center;
+        padding: 10px;
+    }
+    header {
+        text-align: center;
+    }
+    a {
+        color: orangered
+    }
+    footer {
+        text-align: center;
+    }
+    table {
+    margin-top: 20px; /* Add some margin to separate from the header */
+    width: 85%; /* Adjust the width of the table as needed */
+    border-collapse: collapse; /* Optional: collapse table borders */
+    margin-left: 125px;
+    margin-right: 50px;
+    }
+    th, td {
+    padding: 20px;
+    text-align: center; /* Center the content in table cells */
+    border: 2px solid white; /* Optional: Add border for cells */
+    }
+</style>
+
+<body>
+   <div>
+    <header>
+        <div>
+            <div data-include="components/header.html"></div>
+        </div>
+    </header>
+   </div>
+   <main>
+    <h1 title="Header">HTML with EMMET</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Lorem.</th>
+            <th>Iusto?</th>
+            <th>Voluptates?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Eaque nam perferendis in!</td>
+            <td>Doloribus nesciunt dignissimos tenetur.</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Error reiciendis omnis sunt!</td>
+            <td>In modi veritatis nobis!</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Iste suscipit quaerat ratione?</td>
+            <td>Sint similique odit nostrum!</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Laborum nulla est inventore.</td>
+            <td>Quam fugiat iusto autem!</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Iure quaerat quos sit!</td>
+            <td>Eaque itaque debitis illo?</td>
+        </tr>
+    </tbody>
+</table>
+<h2 class="header2">Count 1 to 10 in Bengali</h2>
+<ul>
+    <li class="item1">Ek-->1</li>
+    <li class="item2">Dui-->2</li>
+    <li class="item3">Tin-->3</li>
+    <li class="item4">Char-->4</li>
+    <li class="item5">Pach-->5</li>
+    <li class="item6">Choi-->6</li>
+    <li class="item7">Shat-->7</li>
+    <li class="item8">Aat-->8</li>
+    <li class="item9">Noi-->9</li>
+    <li class="item10">Dosh-->10</li>
+</ul>
+<div>
+    <footer> <div data-include="components/footer.html"></div></footer>
+</div>
+<script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</main>
+</html>
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jashim Howlader's Jazzy Hippopotamus || ITIS 3135 First Script</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Jashim Howlader || First Script</h2>
+        <label for="name">Enter your name here:</label>
+        <input type="text" id="name">
+        
+        <label for="feeling">How are you feeling today?</label>
+        <input type="text" id="feeling">
+        
+        <button onclick="getFeel()" class="large-button">Submit</button>
+        <p id="user"></p>
+
+        <hr>
+        <label for="favoriteNumber">Enter your favorite number (0 to 10):</label>
+        <input id="favoriteNumber" type="number" min="0" max="10">
+        <button onclick="getPolygon()" class="large-button">Get Polygon Name</button>
+        <hr>
+        
+        <button onclick="danceLikeHippo()" class="action-button">Dance Like a Hippo</button>
+        <button onclick="hippoFortuneTeller()" class="action-button">Hippo Fortune Teller</button>
+        <button onclick="playJazzyTune()" class="action-button">Play Jazzy Hippo Tune</button>
+        <button onclick="hippoWisdom()" class="action-button">Hippo's Wisdom</button>
+        <br>
+    </main>
+    <br>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/defaultscript.js"></script>
+</body>
+</html>

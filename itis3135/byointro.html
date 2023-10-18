@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jashim Howlader's Jazzy Hippopotamus || ITIS 3135 BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Jashim Howlader || ITIS 3135 Homepage</h2>
+        <form id="introForm">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br><br>
+
+            <!-- Mascot -->
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" required>
+            <br><br>
+
+            <!-- Image -->
+            <label for="image">Image:</label>
+            <input type="file" id="image" accept=".png, .jpg" required>
+            <br><br>
+
+            <!-- Image Caption -->
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" required>
+            <br><br>
+
+            <!-- Other Information -->
+            <label for="personalBackground">Personal Background:</label>
+            <textarea id="personalBackground" required></textarea>
+            <br><br>
+
+            <label for="professionalBackground">Professional Background:</label>
+            <textarea id="professionalBackground" required></textarea>
+            <br><br>
+
+            <label for="academicBackground">Academic Background:</label>
+            <textarea id="academicBackground" required></textarea>
+            <br><br>
+
+            <label for="webDevelopmentBackground">Background in Web Development:</label>
+            <textarea id="webDevelopmentBackground" required></textarea>
+            <br><br>
+
+            <label for="computerPlatform">Primary Computer Platform:</label>
+            <input type="text" id="computerPlatform" required>
+            <br><br>
+
+            <!-- Courses -->
+            <label for="courses">Courses currently taking:</label>
+            <div id="courseList">
+                <input type="text" class="courseEntry" required>
+                <button type="button" onclick="addCourse()">Add Course</button>
+            </div>
+            <br>
+
+            <!-- Funny Thing -->
+            <label for="funnyThing">Funny thing?</label>
+            <textarea id="funnyThing"></textarea>
+            <br><br>
+
+            <!-- Anything Else -->
+            <label for="anythingElse">Anything else?</label>
+            <textarea id="anythingElse"></textarea>
+            <br><br>
+
+            <!-- Agreement Checkbox -->
+            <input type="checkbox" id="agreement" required>
+            <label for="agreement">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        function addCourse() {
+            const courseList = document.getElementById('courseList');
+            const courseEntry = document.createElement('input');
+            courseEntry.type = 'text';
+            courseEntry.className = 'courseEntry';
+            courseEntry.required = true;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.type = 'button';
+            deleteButton.onclick = function () {
+                courseList.removeChild(courseEntry);
+                courseList.removeChild(deleteButton);
+            };
+            courseList.appendChild(courseEntry);
+            courseList.appendChild(deleteButton);
+        }
+    </script>
+</body>
+</html>
