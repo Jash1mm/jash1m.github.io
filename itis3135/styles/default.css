@@ -3,7 +3,8 @@
 @media (min-width: 576px) {
 
 body {
-    background-color: lightblue;
+    background-color: #001F3F;
+    color: silver;
 }
 
 h1, h2, h3{
@@ -12,12 +13,12 @@ h1, h2, h3{
 }
 
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 
 a {
-    color: orangered;
+    color: whitesmoke;
 }
 
 #profile-image {
@@ -95,7 +96,7 @@ main {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -139,3 +140,4 @@ footer {
     padding: 20px;
 }
 }
+
