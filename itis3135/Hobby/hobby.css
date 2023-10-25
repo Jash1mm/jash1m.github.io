@@ -1,0 +1,8 @@
+/* CSS Default Page */
+
+@media (min-width: 576px) {
+    
+    body {
+        background-color: lightblue;
+    }
+}
