@@ -5,6 +5,7 @@
 body {
     background-color: #001F3F;
     color: silver;
+    
 }
 
 h1, h2, h3{
@@ -141,3 +142,17 @@ footer {
 }
 }
 
+/* Calculotr_try*/
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
