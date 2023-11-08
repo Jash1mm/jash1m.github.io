@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<style>
+
+
+header, footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    width: 100%;
+    margin: 5px 0;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+</style>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <div>
+            <form>
+                <label for="employee">Select an Employee:</label>
+                <select id="employee">
+                    <option value="option1" selected>Select</option>
+                    <option value="200000">Steven Spielberg</option>
+                    <option value="190000">Christopher Nolan</option>
+                    <option value="185000">Alfred Hitchcock</option>
+                    <option value="170000">James Cameron</option>
+                    <option value="150000">Quentin Tarantino</option>
+                    <option value="145000">Paul Thomas Anderson</option>
+                    <option value="100000">Martin Scorsese</option>
+                </select>
+                <h3>Add an Employee and their Salary</h3>
+                <label for="name">Name
+                    <input type="text" id="name" name="name" placeholder="John Doe">
+                </label>
+
+                <label for="salary">Salary
+                    <input type="text" id="salary" name="salary" placeholder="$">
+                </label>
+                <button id="addButton" type="button">Add Salary</button>
+                <button id="displayResultButton" type="button">Display Result</button>
+                <button id="displaySalaryButton" type="button">Display Salary</button>
+            </form>
+        </div>
+        <div id="results" style="display: none;">
+            <h3>Results</h3>
+            <p>
+                <em>Average:</em> <span id="averageSalary">0.00</span>
+            </p>
+            <p>
+                <em>Highest:</em> <span id="highestSalary">0.00</span>
+            </p>
+        </div>
+        <table id="results-table" style="display: none;">
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/arrays.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

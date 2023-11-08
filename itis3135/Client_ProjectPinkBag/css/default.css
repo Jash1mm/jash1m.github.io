@@ -1,0 +1,42 @@
+@media (min-width: 576px) {
+
+body {
+    background-color: #FFCBDD;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: magenta;
+}
+
+a:hover {
+    background-color: whitesmoke;
+}
+
+p {
+    color: black;
+    font-weight:bold;
+}
+
+
+h1 {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    color: magenta;
+    
+}
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+}
+h3 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+}

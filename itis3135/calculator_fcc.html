@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator_try</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <title>calculator_fcc</title>
     <link rel="stylesheet" href="styles/calculator.css">
+    <link rel="stylesheet" href="styles/default.css">
+    
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 
         <div class="buttons">
             <button class="operator" data-value="AC">AC</button>
-            <button class="operator" data-value="Del">DEL</button>
+            <button class="operator" data-value="Del" onclick="display.value = display.value.toString().slice(0, -1)">Del</button>
             <button class="operator" data-value="%">%</button>
             <button class="operator" data-value="/">/</button>
         

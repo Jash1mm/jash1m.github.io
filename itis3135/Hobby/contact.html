@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JH Production</title>
+    <link rel="icon" type="image/x-icon" href="images/favi.png">
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+         }
+         
+         .contact-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+         }
+         
+         h2 {
+           text-align: center;
+         font-size: 36px;
+         color: whitesmoke;
+         padding: 20px 0;
+         background-color: #007BFF;
+         border-radius: 10vh;
+         }
+     
+        a {
+         color: #007BFF;
+         align-items: center;
+         font-size: x-large;
+        }
+        a:hover {
+         color: orangered;
+        }
+         
+         p {
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+         }
+         
+         form {
+            display: flex;
+            flex-direction: column;
+         }
+         
+         .form-group {
+            margin-bottom: 20px;
+         }
+         
+         label {
+            font-size: 20px;
+            color: #333;
+         }
+         
+         input[type="text"],
+         input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+         }
+         
+         input[type="text"]:focus,
+         input[type="email"]:focus {
+            border-color: #007BFF;
+         }
+         
+         button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+         }
+         
+         button:hover {
+            background-color: #0056b3;
+         }
+         .thank-you-message {
+             display: none;
+             background-color: #2ecc71; /* Green background color */
+             color: #fff; /* White text color */
+             text-align: center;
+             padding: 20px;
+             border-radius: 5px;
+             margin-top: 20px;
+         }
+     
+     
+     .validation-button {
+         display: inline-block;
+         padding: 20px 20px;
+         background-color: #007BFF;
+         border-top: 20px;
+         color: #fff;
+         border: none;
+         cursor: pointer; 
+         transition: background-color 0.3s;
+         font-size: 16px;
+         text-decoration: none;
+     }
+     
+     .validation-button:hover {
+         background-color: #0056b3;
+     }
+     
+     .contact-info-box {
+        max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+     }
+     </style>
+</head>
+
+<body>
+   <h2>Contact Us</h2>
+   <header>
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="services.html">Services</a>
+         <a href="pricing.html">Pricing</a>
+         <a href="contact.html">Contact</a>
+         <a href="about.html">About</a>
+     </nav>
+   </header>
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const contactForm = document.getElementById("contact-form");
+          const thankYouMessage = document.getElementById("thank-you-message");
+          const submitButton = document.getElementById("submit-button");
+  
+          contactForm.addEventListener("submit", function (e) {
+              e.preventDefault(); // Prevent the default form submission behavior
+              thankYouMessage.style.display = "block";
+              submitButton.style.display = "none";
+          });
+      });
+  </script>
+  </script>
+    <main></main>
+        <div class="contact-section">
+            <p>We would love to hear from you. Please fill out the form below with your contact information, and we'll get in touch with you as soon as possible.</p>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit-button">Submit</button>
+                </div>
+            </form>
+            
+            <div id="thank-you-message">
+                <p>Thank you for contacting JH Production. We will get back to you shortly.</p>
+            </div>
+        </div>
+         <div class="contact-info-box">
+         <p>Contact: (334) 488-ABCD</p>
+         <p>Email us: jhproduction@gmail.com</p>
+         </div>
+     
+         <footer>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fjhowlade%2Fitis3135%2FHobby%2Fcontact.html" target="_blank" rel="noopener">
+                <button class="validation-button">Validate HTML ✓</button>
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fjhowlade%2Fitis3135%2FHobby%2Fstyles.css" target="_blank" rel="noopener">
+                <button class="validation-button">Validate CSS ✓</button>
+            </a>
+        </footer>
+        
+   </main>
+</body>
+</html>
