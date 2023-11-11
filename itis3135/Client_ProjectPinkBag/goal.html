@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectPinkBag</title>
+    <title>goal</title>
     <link rel="stylesheet" href="css/default.css">
 </head>
 
 <body>
     <header>
+        <a href="index.html">
+            <img src="pictures/PinkBagLogo.jpg" alt="ProjectPinkBag Logo" class="topbrandlogo">
+        </a>
         <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Our Goal</h2>
         <p>Our primary goal at Project PinkBag is to ensure that every girl and woman in Bangladesh has access to safe and hygienic menstrual supplies, empowering them to manage their periods with dignity. We believe that menstrual hygiene is a cornerstone of gender equality and women's empowerment. By providing these essential resources and education, we aspire to break the taboos and stigmas associated with menstruation, ultimately fostering an environment where every girl and woman can thrive and achieve their full potential.
         </p>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="pictures/pic7.png" alt="brandlogo" class="brandlog">
+                <img src="pictures/pic4.png" alt="brandlogo" class="brandlog">
+                <img src="pictures/pic5.png" alt="brandlogo" class="brandlog">
+            </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+        
     </main>
     <footer>
+        <p>&copy; 2023 ProjectPinkBag</p>
         <div data-include="components/footer.html"></div>
     </footer>
-
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/slider.js"></script>
 </body>
 </html>

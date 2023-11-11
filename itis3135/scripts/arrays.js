@@ -15,15 +15,8 @@ function addSalary() {
 
     persons.push(name);
     salaries.push(salary);
-
-    // Clear the input fields
     nameInput.value = "";
     salaryInput.value = "";
-
-    // Move the cursor back to the name field
-    nameInput.focus();
-
-    updateEmployeeSelect();
 }
 
 function displayResults() {
