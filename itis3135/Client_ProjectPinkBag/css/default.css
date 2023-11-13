@@ -205,6 +205,10 @@ button {
     right: 10px;
 }
 
+figcaption {
+    text-align: center;
+}
+
 
 
 @media screen and (max-width: 768px) {
