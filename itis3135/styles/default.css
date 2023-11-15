@@ -253,3 +253,13 @@ footer {
     padding: 10px;
 }
 
+/*---Interactive Drawing */
+.drawing { 
+    position: relative;
+    overflow: hidden;
+    height: 360px;
+    width: 479px;
+    float: right;   
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    }
