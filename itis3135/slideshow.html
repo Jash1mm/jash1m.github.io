@@ -8,132 +8,216 @@
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0; 
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
 <body>
-<main>
-<header>
+  <header>
     <div data-include="components/header.html"></div>
-    <h2 style="text-align:center">Slideshow Gallery</h2>
+    <h2>Slideshow</h2>
 </header>
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 14</div>
-    <img src="img_woods_wide.jpg" style="width:100%">
-  </div>
+<main>
+<div class="slideshow-container">
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 14</div>
-    <img src="img_5terre_wide.jpg" style="width:100%">
-  </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 14</div>
-    <img src="img_mountains_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 14</div>
-    <img src="img_lights_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 14</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 14</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
-  </div>
-  <div class="mySlides">
-    <div class="numbertext">7 / 14</div>
-    <img src="img_woods_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">8 / 14</div>
-    <img src="img_5terre_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">9 / 14</div>
-    <img src="img_mountains_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">10 / 14</div>
-    <img src="img_lights_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">11 / 14</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">12 / 14</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">13 / 14</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">14 / 14</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
-  </div>
-    
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
 
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(1)" alt="Joystick">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(2)" alt="Audio Interface">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(3)" alt="Solid State Drive">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(4)" alt="Hard Drive">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(5)" alt="IO Shield">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="images/monitor.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Monitor">
-    </div>
-    <div class="column">
-        <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(1)" alt="HDMI Cable">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(2)" alt="Optical Drive">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(3)" alt="WIFI Antenna">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(4)" alt="Laptop">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(5)" alt="Disk">
-      </div>    
-      <div class="column">
-        <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(6)" alt="Ethernet Port">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/" style="width:100%" onclick="currentSlide(6)" alt="Ram">
-      </div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 14</div>
+  <img src="images/sliderPictures/jashim.jpg" style="width:50%">
+  <div class="text">J - Jashim, a Person</div>
 </div>
 
+<div class="mySlides fade">
+  <div class="numbertext">2 / 14</div>
+  <img src="images/sliderPictures/audioInterface.jpg" style="width:50%">
+  <div class="text">A - Audio Interface</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 14</div>
+  <img src="images/sliderPictures/solidStateDrive.jpg" style="width:50%">
+  <div class="text">S - Solid State Drive</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 14</div>
+  <img src="images/sliderPictures/hardDiskDrive.jpg" style="width:50%">
+  <div class="text">H - Hard Disk Drive</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 14</div>
+  <img src="images/sliderPictures/ioPorts.jpg" style="width:50%">
+  <div class="text">I - Input & Output Ports</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 14</div>
+  <img src="images/sliderPictures/monitor.jpg" style="width:50%">
+  <div class="text">M - Monitor</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 14</div>
+  <img src="images/sliderPictures/hdmiCable.jpg" style="width:50%">
+  <div class="text">H - HDMI Cable</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 14</div>
+  <img src="images/sliderPictures/opticalDrive.jpg" style="width:50%">
+  <div class="text">O - Optical Drive</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 14</div>
+  <img src="images/sliderPictures/wifiAntena.jpg" style="width:50%">
+  <div class="text">W - Wifi Antena</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 14</div>
+  <img src="images/sliderPictures/laptop.jpg" style="width:50%">
+  <div class="text">L - Laptop</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 14</div>
+  <img src="images/sliderPictures/adapter.jpg" style="width:50%">
+  <div class="text">A - Adapter</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 14</div>
+  <img src="images/sliderPictures/disc.jpg" style="width:50%">
+  <div class="text">D - Disc</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 14</div>
+  <img src="images/sliderPictures/ethernetPort.jpg" style="width:50%">
+  <div class="text">E - Ethernet Port</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">14 / 14</div>
+  <img src="images/sliderPictures/ram.jpg" style="width:50%">
+  <div class="text">R - Ram</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+  
+</script>
 <script>
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -149,7 +233,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
+  let dots = document.getElementsByClassName("dot"); // Change "demo" to "dot"
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -163,11 +247,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
 </script>
 </main>
 <footer>
-    <div data-include="components/footer.html"></div>
+  <div data-include="components/footer.html"></div>
 </footer>
 <script src="scripts/HTMLInclude.min.js"></script>
 </body>
-</html>
+</html> 
