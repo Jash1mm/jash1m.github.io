@@ -23,7 +23,6 @@ a {
 }
 
 /*Nav Bar Accordion*/
-<style>
 .accordion {
   background-color: #eee;
   color: #444;
@@ -47,7 +46,7 @@ a {
   background-color: white;
   overflow: hidden;
 }
-</style>
+}
 
 /* Index Page Image */
 #hippo {
@@ -177,7 +176,7 @@ hr {
 footer {
     padding: 20px;
 }
-}
+
 
 /* Calculotr_try*/
 #calculator_try {
