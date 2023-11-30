@@ -5,7 +5,6 @@
 body {
     background-color: #001F3F;
     color: silver;
-    
 }
 
 h1, h2, h3{
@@ -18,9 +17,23 @@ p {
     font-size: 20px;
 }
 
+/* Links - a tag */
 a {
     color: whitesmoke;
     text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Middle Nav Color Change*/
+.middle-nav a {
+  color: #ff5733; 
+}
+
+.last-nav a {
+  color: #ff5733; /* Set the color for the middle navigation links */
 }
 
 /*Nav Bar Accordion*/
@@ -358,7 +371,6 @@ img {
   top: 0;
 }
 
-/* Container for image text */
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -372,13 +384,11 @@ img {
   clear: both;
 }
 
-/* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
@@ -387,5 +397,11 @@ img {
 .demo:hover {
   opacity: 1;
 } 
+
+/* Middle Nav Color Change*/
+#middleNav{ 
+  color: red;
+  background-color: red;
+}
 
 
