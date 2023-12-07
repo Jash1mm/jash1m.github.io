@@ -33,7 +33,7 @@ a:hover {
 }
 
 .last-nav a {
-  color: #ff5733; /* Set the color for the middle navigation links */
+  color: #ff5733; 
 }
 
 /*Nav Bar Accordion*/
@@ -404,3 +404,4 @@ img {
   background-color: red;
 }
  
+

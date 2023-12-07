@@ -1,24 +1,17 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const donationAmountRadios = document.querySelectorAll('input[name="donationAmount"]');
-    const customAmountInput = document.getElementById('customAmount');
+// donation.js
 
-    donationAmountRadios.forEach(radio => {
-        radio.addEventListener('change', function () {
-            customAmountInput.value = '';
-            customAmountInput.disabled = true;
-        });
-    });
+// Function to handle GoFundMe donation
+function donateToGoFundMe() {
+    window.open('https://gofund.me/38b4bedc', '_blank');
+}
 
-    customAmountInput.addEventListener('focus', function () {
-        donationAmountRadios.forEach(radio => {
-            radio.checked = false;
-        });
-    });
+// Function to handle PayPal donation
+function donateToPayPal() {
+    window.open('https://www.paypal.me/jashimhowlader', '_blank');
+}
 
-    donationAmountRadios.forEach(radio => {
-        radio.addEventListener('focus', function () {
-            customAmountInput.value = '';
-            customAmountInput.disabled = true;
-        });
-    });
-});
+// Event listener to trigger GoFundMe donation on click
+document.getElementById('gofundme-link').addEventListener('click', donateToGoFundMe);
+
+// Event listener to trigger PayPal donation on click
+document.getElementById('paypal-link').addEventListener('click', donateToPayPal);
