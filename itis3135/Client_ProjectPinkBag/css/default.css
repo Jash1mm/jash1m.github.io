@@ -5,10 +5,77 @@ body, h1, h2, h3, p, figure, ul, ol, li {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #000;
-    background-color: #f2f2f2;
+    color: #ff69b4; 
+    background-color: #f8f8f8;
+}
+
+/* Add this style for the top-left corner email icon */
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #ff69b4; /* Choose your desired background color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.top-left::before {
+    content: "\2709"; /* Unicode character for envelope icon */
+    font-family: Arial, sans-serif; /* Choose a font that supports the envelope character */
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-right: 5px;
+    line-height: 1; /* Align the icon vertically with the text */
+}
+
+
+/* Donate Here - Index Page*/
+
+@keyframes bounceHeading {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0) scale(1); }
+    40% { transform: translateY(-10px) scale(1.05); }
+    60% { transform: translateY(-5px) scale(1.03); }
+}
+
+.bounceHeading {
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: bounceHeading 1s infinite;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #ff69b4, #ff69b4);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2em;
+}
+
+
+
+/* Arrow Animation */
+.arrow {
+    text-align: center;
+}
+
+.arrow-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #333; /* Change color as needed */
+    animation: bounceArrow 1s infinite alternate;
+}
+
+@keyframes bounceArrow {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px);
+    }
 }
 
 /* Global styles */
@@ -19,9 +86,10 @@ body {
 }
 
 header {
+    font-size: 10px;
     background-color: #ff69b4;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -33,22 +101,15 @@ header {
 }
 
 .topbrandlogo {
-    width: 50px;
-    border: 2px solid #ff69b4;
-    border-radius: 50px; 
+    width: 200px; /* Set a specific width that fits your design */
     height: auto;
     display: block;
     margin: 10px auto;
-    transition: transform 0.3s ease-in-out;
 }
+
 
 .topbrandlogo:hover {
     transform: scale(1.1);
-}
-
-nav {
-    text-align: center;
-    margin-top: 15px;
 }
 
 nav a {
@@ -61,6 +122,7 @@ nav a {
 
 nav a:hover {
     color: #ff69b4;
+    text-decoration: underline;
 }
 
 main {
@@ -96,7 +158,6 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
-    border-radius: 8px;
 }
 
 footer > a {
@@ -113,7 +174,7 @@ footer > a:hover {
     color: white;
 }
 
-
+/* Donation Links and Logos */
 .donate-logo {
     max-width: 150px;
     height: auto;
@@ -151,24 +212,19 @@ nav a.active {
     margin: 20px auto;
 }
 
+
 /* Style for the "Donate" link in the footer */
 footer {
     background-color: #ff69b4;
     color: #fff;
     text-align: center;
+    font-size: 10px;
     padding: 20px 0;
     margin-top: 20px;
     border-radius: 8px;
 }
 
-footer > a {
-    color: black; 
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-footer > a:hover {
+footer a:hover {
     color: white;
 }
 
@@ -203,7 +259,7 @@ img {
 
 button {
     color: white;
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     font-size: 45px;
@@ -315,13 +371,14 @@ figcaption {
 }
 
 .donateL img {
-    width: 100px;
+    width: 2000px;
     height: auto;
     transition: transform 0.5s ease-in-out;
 }
 
 .donateL:hover img {
     transform: scale(1.1);
+    color: red;
 }
 
 /* PayPal Button Styles */
@@ -330,25 +387,143 @@ figcaption {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        padding: 20px 0;
-    }
-
-    nav {
-        text-align: center;
-        margin-top: 15px;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: #000;
-        font-weight: bold;
-        margin-left: 15px;
-        transition: color 0.3s ease-in-out;
-    }
-
-    nav a:hover {
-        color: white;
-    }
+/* Styles for the figcaption element */
+.figcap {
+    text-align: center;
+    margin-top: 10px;
+    color: black; /* Adjust the color as needed */
+    font-size: 14px;
 }
+
+.figcap em {
+    font-style: normal;
+    color: #ff69b4; /* Adjust the color as needed */
+}
+
+.figcap:before,
+.figcap:after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #ccc; /* Adjust the color as needed */
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.figcap em {
+    padding: 0 10px;
+}
+
+
+header {
+    padding: 20px;    
+}
+
+nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Maps - About Page*/
+.map-container {
+    display: flex;
+    gap: 20px;
+}
+
+.map {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.map:hover {
+    transform: scale(1.05);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ... your existing styles ... */
+
+.label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.label2 {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.map:hover .label,
+.map:hover .label2 {
+    opacity: 0;
+}
+
+
+/* End of CSS */
+
+/* Responsive styles for screens up to 767px width */
+@media screen and (max-width: 767px) {
+    body {
+        /* Adjust styles for smaller screens */
+    }
+
+    header {
+        /* Adjust styles for smaller screens */
+    }
+
+    /* Add responsive styles for other elements as needed */
+}
+
+/* Responsive styles for screens between 768px and 1199px width */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    /* Add responsive styles for this range if needed */
+}
+
+/* Responsive styles for screens 1200px and wider */
+@media screen and (min-width: 1200px) {
+    /* Add responsive styles for larger screens if needed */
+}
+

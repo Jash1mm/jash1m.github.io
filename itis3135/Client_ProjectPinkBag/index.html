@@ -7,45 +7,66 @@
     <title>ProjectPinkBag</title>
     <link rel="stylesheet" href="css/default.css">
     <link rel="icon" type="image/x-icon" href="pictures/pinkbagfavicon.png">
-    <link rel="stylesheet" href="components/header.html">
-    <script src="slick.min.js"></script>
-    <script src="jquery.magnific-popup.min.js"></script>
-    <script src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="components/header.html">  
+    <script defer src="scripts/HTMLInclude.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/donation.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
+        <div class="top-left">
+            <p>
+                <i class="fas fa-envelope"></i> <a href="mailto:projectpinkbag@gmail.com" style="color: #fff;">projectpinkbag@gmail.com</a>
+            </p>
+        </div>
         <a href="index.html">
             <img src="pictures/PinkBagLogo.jpg" alt="ProjectPinkBag Logo" class="topbrandlogo">
         </a>
         <div data-include="components/header.html"></div>
     </header>
+    
     <main>
     <div>
         <p>
-        Project PinkBag is a non-profit organization dedicated to improving the lives of girls and women in Bangladesh by addressing a critical issue - access to sanitary supplies. With a mission to ensure menstrual hygiene and empower women, the organization is committed to providing menstrual products and education to those in need.
+        <strong>Project PinkBag</strong> is a non-profit organization dedicated to improving the lives of girls and women in Bangladesh by addressing a critical issue - access to sanitary supplies. With a mission to ensure menstrual hygiene and empower women, the organization is committed to providing menstrual products and education to those in need.
         Project PinkBag focuses on breaking the stigma and taboos surrounding menstruation while promoting menstrual health awareness. Their primary goal is to distribute sanitary supplies to girls and women in underserved communities throughout Bangladesh. These supplies include sanitary pads, menstrual cups, and other hygiene products.
         </p>
     </div>
-    <div>
-        <img src="pictures/pic1.png" alt="brandlogo" class="brandlog">
-    </div>
+
     <div>
         <p>
         In addition, to the distribution of menstrual supplies, Project PinkBag conducts educational programs and workshops to raise awareness about menstrual hygiene and empower women with the knowledge they need to manage their periods with dignity. By providing these essential resources and education, Project PinkBag aims to enhance the overall well-being and self-esteem of girls and women in Bangladesh, ultimately contributing to their social and economic empowerment.
         Through their relentless efforts, Project PinkBag plays a crucial role in promoting gender equality and improving the lives of countless girls and women in Bangladesh, ensuring they have access to the sanitary supplies and knowledge needed for a healthier and more dignified menstrual experience.
         </p>
-    </div>
-    
+        
+        <h2 class="bounceHeading">Donate HERE</h2>
+
+        <div class="arrow">
+            <span class="arrow-icon"></span>
+        </div>
+        
+        <a id="gofundme-link" href="https://gofund.me/38b4bedc" target="_blank" class="donateL">
+            <img src="pictures/gofundme.png" alt="Donate" class="donate-logo">
+        </a>
+        <figcaption class="figcap"><em>100% of Your donations goes to the charity</em></figcaption>
+        <br>
+        <div>
+            <img src="pictures/pic1.png" alt="brandlogo" class="brandlog">
+        </div>
+        
+        <p>
+            Donate to Support Menstrual Hygiene and Women's Empowerment
+            Your generous donation can make a real difference in the lives of girls and women in Bangladesh. By contributing to Project PinkBag, you are helping us ensure that every individual has access to safe and hygienic menstrual supplies, empowering them to manage their periods with dignity. Your support can break down barriers, foster education, and create a brighter future for countless girls and women.
+        </p>
     </main>
 
     <footer>
-        <p>&copy; 2023 ProjectPinkBag</p>
+        <p>&copy; 2023 Project PinkBag. All rights reserved.</p>
         <div data-include="components/footer.html" class="donatelink"></div>
     </footer>
-    <script defer src="scripts/HTMLInclude.min.js"></script>
-    <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/donation.js"></script>
 
 </body>
 </html>
